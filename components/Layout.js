@@ -21,8 +21,9 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0px;
-  background-image: url("https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80");
-  background-position: top;
+  background-image: url("https://as1.ftcdn.net/v2/jpg/00/99/12/20/1000_F_99122087_V0myMhFRYkp06fP0jNFHrxk0ww8weck0.jpg");
+  /* background-position: top; */
+  background-size: contain; 
   color: ${(props) =>
     props.dark ? 'var(--dark-color)' : 'var(--light-color)'};
   min-height: 100vh;

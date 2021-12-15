@@ -56,7 +56,7 @@ const CirclesContainer = styled.div`
   .jazz-image {
     min-height: 100% !important;
     min-width: 100% !important;
-    filter: ${(props) => (props.darkTheme ? 'none' : 'invert(1) !important')};
+    filter: ${(props) => (props.dark ? 'none' : 'invert(1) !important')};
     z-index: 0;
   }
 `;
