@@ -41,7 +41,7 @@ const Banner = (props) => {
       cardColor={props.cardColor}
       color={props.color}
       imgLink={props.img}
-      className="glass bottom-space"
+      className="glass"
     >
       <div className="banner-card box-shadow">
         <h1>{props.title}</h1>

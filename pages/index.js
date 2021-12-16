@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import Banner from '../components/Banner';
+import Videobanner from '../components/Videobanner';
 import Circles from '../components/Circles';
+import Card from '../components/Card';
 
 const Main = styled.main`
   display: flex;
@@ -59,6 +61,9 @@ export default function Home() {
         /* color="white" */
         img=""
       />
+      <Videobanner height="75vh">
+        <Card />
+      </Videobanner>
     </div>
   );
 }
