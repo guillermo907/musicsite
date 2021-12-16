@@ -12,8 +12,8 @@ const CardContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    width: 60vh;
+    height: 65vh;
+    width: 65vh;
     //padding: 40vh;
     border-radius: 12px 170px 12px 170px;
     //background-color: rgba(30, 144, 255, 0.87);
