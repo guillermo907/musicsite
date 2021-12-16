@@ -12,7 +12,7 @@ const CardContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 85vh;
+    height: 80vh;
     width: 60vh;
     //padding: 40vh;
     border-radius: 12px 170px 12px 170px;
