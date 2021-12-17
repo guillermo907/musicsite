@@ -33,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
   align-items: center;
   justify-content: start;
   }
+
   a{
       text-decoration: none;
       color: inherit;

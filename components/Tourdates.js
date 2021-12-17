@@ -86,8 +86,10 @@ const Tourdates = (props) => {
     return tourdates.map((tourdate) => {
       return (
         <div className="tourdate" key={tourdate.date}>
-          <p>{tourdate.place}</p>
-          <p>{tourdate.date}</p>
+          <p>
+            {tourdate.place}
+            {tourdate.date}
+          </p>
           <button>Reservar</button>
         </div>
       );
