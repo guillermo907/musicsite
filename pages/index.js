@@ -10,7 +10,7 @@ import Tourdates from '../components/Tourdates';
 const Main = styled.main`
   display: flex;
   //background-color: var(--color-one);
-  background-color: rgba(30, 144, 255, 0.22);
+  background-color: var(--color-blue-trans);
   //filter: opacity(0.9);
   align-items: center;
   justify-content: center;
@@ -65,7 +65,7 @@ export default function Home() {
       <Videobanner height="75vh">
         <Card />
       </Videobanner>
-      <Tourdates bgColor="var(--color-two)" />
+      <Tourdates bgColor="var(--color-blue-trans)" />
     </div>
   );
 }

@@ -9,14 +9,14 @@ const TourdatesCont = styled.div`
   background-image: ${(props) => `url(${props.imgLink})`};
   z-index: 10;
 
-  background-color: ${(props) => props.bgColor};
+  background-color: ${(props) => props.bgColor} !important;
   background-blend-mode: overlay;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   // color: ${(props) => props.color};
-  padding: 20px 20px;
+  padding: 20px 10px;
 
   .banner-content {
     background-color: ${(props) => props.cardColor};
@@ -27,6 +27,10 @@ const TourdatesCont = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   .tourdate {
@@ -43,18 +47,13 @@ const TourdatesCont = styled.div`
       border-radius: 12px;
       border: none;
       margin-left: 3em;
-      padding: 22px 10px;
+      padding: 5px 15px;
       color: inherit;
       cursor: pointer;
 
       &:hover {
         transform: scale(1.1);
       }
-    }
-  }
-  @media only screen and (max-width: 600px) {
-    .banner-card {
-      width: 100%;
     }
   }
 `;
@@ -101,7 +100,7 @@ const Tourdates = (props) => {
       cardColor={props.cardColor}
       color={props.color}
       imgLink={props.img}
-      className=""
+      className="glass"
     >
       <h1>Upcoming tour dates</h1>
       <br />

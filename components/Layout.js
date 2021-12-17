@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     --color-two: #ca548e; //dark blue
     --color-three:#1ccbe0; //green
     --color-four: #192b3a; //dark
+    --color-blue-trans: rgba(30, 144, 255, 0.55);
     --light-color: black;
     --dark-color: white;
     --light-background: RGBA(255, 255, 255, 0.85);
