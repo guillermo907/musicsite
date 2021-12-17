@@ -10,9 +10,10 @@ const CardContainer = styled.div`
   background: linear-gradient(
     to left,
     rgba(123, 43, 124, 0.4),
+    rgba(123, 43, 124, 0.4),
     var(--color-one)
   ) !important;
-  background-size: 400%;
+  background-size: 200%;
   .card-content {
     display: flex;
     align-items: center;
