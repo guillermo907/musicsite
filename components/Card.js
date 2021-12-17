@@ -7,7 +7,12 @@ const CardContainer = styled.div`
   justify-content: center;
   height: 100%;
   width: 100%;
-
+  background: linear-gradient(
+    to left,
+    rgba(123, 43, 124, 0.4),
+    var(--color-one)
+  ) !important;
+  background-size: 400%;
   .card-content {
     display: flex;
     align-items: center;
@@ -16,7 +21,6 @@ const CardContainer = styled.div`
     width: 65vw;
     //padding: 40vh;
     border-radius: 12px 170px 12px 170px;
-    //background-color: rgba(30, 144, 255, 0.87);
 
     @media only screen and (max-width: 600px) {
       height: 45vh;
