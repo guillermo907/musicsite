@@ -5,6 +5,7 @@ import Banner from '../components/Banner';
 import Videobanner from '../components/Videobanner';
 import Circles from '../components/Circles';
 import Card from '../components/Card';
+import Tourdates from '../components/Tourdates';
 
 const Main = styled.main`
   display: flex;
@@ -64,6 +65,7 @@ export default function Home() {
       <Videobanner height="75vh">
         <Card />
       </Videobanner>
+      <Tourdates bgColor="var(--color-two)" />
     </div>
   );
 }
