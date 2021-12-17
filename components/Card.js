@@ -12,11 +12,24 @@ const CardContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 65vh;
-    width: 65vh;
+    height: 55vh;
+    width: 65vw;
     //padding: 40vh;
     border-radius: 12px 170px 12px 170px;
     //background-color: rgba(30, 144, 255, 0.87);
+
+    @media only screen and (max-width: 600px) {
+      height: 45vh;
+      width: 85vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      height: 45vh;
+      width: 55vw;
+    }
+
+    h2 {
+      margin: 1em;
+    }
   }
 `;
 
