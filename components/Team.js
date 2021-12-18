@@ -1,5 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
+import guitarPic from '../public/guitarPlayer.svg';
+import chet from '../public/chet1.jpeg';
+import kenny from '../public/kenny.jpeg';
+import john from '../public/john.jpeg';
+import art from '../public/art.jpeg';
 
 const TeamContainer = styled.div`
   display: grid;
@@ -12,7 +18,15 @@ const TeamContainer = styled.div`
   height: 100%;
 
   .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: transparent;
+
+    img {
+      border-radius: 50%;
+    }
   }
 `;
 
@@ -20,18 +34,50 @@ const Team = () => {
   return (
     <TeamContainer>
       <div className="team-member">
+        <Image
+          className="jazz-image"
+          src={chet}
+          alt="sax player"
+          width={200}
+          height={200}
+          /* placeholder="blur" */
+        />
         <h2>Chet Baker</h2>
         <h3>Trumpet</h3>
       </div>
       <div className="team-member">
+        <Image
+          className="jazz-image"
+          src={kenny}
+          alt="sax player"
+          width={200}
+          height={200}
+          /* placeholder="blur" */
+        />
         <h2>Kenny Baron</h2>
         <h3>Piano</h3>
       </div>
       <div className="team-member">
+        <Image
+          className="jazz-image"
+          src={john}
+          alt="sax player"
+          width={200}
+          height={200}
+          /* placeholder="blur" */
+        />
         <h2>John Patitucci</h2>
         <h3>Bass</h3>
       </div>
       <div className="team-member">
+        <Image
+          className="jazz-image"
+          src={art}
+          alt="sax player"
+          width={200}
+          height={200}
+          /* placeholder="blur" */
+        />
         <h2>Art Blakey</h2>
         <h3>Drums</h3>
       </div>
