@@ -18,7 +18,7 @@ const VideoContainer = styled.div`
     inline-size: auto;
   }
   .pause-btn {
-    color: var(--color-four);
+    color: rgba(255, 255, 255, 0.5);
     position: absolute;
     bottom: 10px;
     background: transparent;
@@ -66,7 +66,7 @@ const Videobanner = (props) => {
             setPlay(!play);
           }}
         >
-          Play
+          {play ? 'Pause Animation' : 'Play Animation'}
         </button>
       </div>
       <div className="content">{props.children}</div>

@@ -87,8 +87,7 @@ const Tourdates = (props) => {
       return (
         <div className="tourdate" key={tourdate.date}>
           <p>
-            {tourdate.place}
-            {tourdate.date}
+            {tourdate.place} {'->'} {tourdate.date}
           </p>
           <button>Reservar</button>
         </div>

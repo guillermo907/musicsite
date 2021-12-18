@@ -9,7 +9,7 @@ const CardContainer = styled.div`
   width: 100%;
   background: linear-gradient(
     to left,
-    var(--color-one),
+    var(--color-two),
     var(--color-blue-trans)
   ) !important;
   background-size: 200%;

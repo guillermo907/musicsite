@@ -27,11 +27,24 @@ const GlobalStyle = createGlobalStyle`
   background-size: contain; 
   color: ${(props) =>
     props.dark ? 'var(--dark-color)' : 'var(--light-color)'};
+    /* background-color: var(--color-blue-trans);
+    background-blend-mode: overlay; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
+
+  &:after{
+    position: fixed;
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(30, 144, 255, 0.55);
+    z-index: -99;
+  }
   }
 
   a{

@@ -48,7 +48,7 @@ export default function Home() {
       </Head>
       <Main>
         <div className="glass main-banner">
-          <h1>Music</h1>
+          <h1>JazzTrix</h1>
           <p>Pagina para probar NextJs</p>
           <Circles />
         </div>
