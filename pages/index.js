@@ -6,6 +6,8 @@ import Videobanner from '../components/Videobanner';
 import Circles from '../components/Circles';
 import Card from '../components/Card';
 import Tourdates from '../components/Tourdates';
+import Section from '../components/Section';
+import Team from '../components/Team';
 
 const Main = styled.main`
   display: flex;
@@ -54,14 +56,9 @@ export default function Home() {
         </div>
       </Main>
       {/* Seccion con imagenes */}
-      <Banner
-        title="Banner"
-        subtitle="subtitle"
-        bgColor="rgba(255, 255, 255, 0.80)"
-        cardColor="transparent"
-        /* color="white" */
-        img=""
-      />
+      <Section height="80vh">
+        <Team />
+      </Section>
       <Videobanner height="75vh">
         <Card />
       </Videobanner>
