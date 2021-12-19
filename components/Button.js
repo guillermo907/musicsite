@@ -12,6 +12,7 @@ const ButtonCont = styled.button`
 `;
 const Button = (props) => {
   const darkTheme = useSelector(({ theme }) => theme.dark);
+
   return (
     <ButtonCont
       className="glass drop-shadow"

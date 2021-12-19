@@ -65,7 +65,11 @@ const GlobalStyle = createGlobalStyle`
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     //background-color: rgba(255, 255, 255, 0.33);
    //border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
+    /* border: 1px solid rgba(209, 213, 219, 0.3); */
+    border: ${(props) =>
+      props.dark
+        ? '1px solid rgba(209, 213, 219, 0.1)'
+        : '1px solid rgba(209, 213, 219, 0.3)'};
     background-color: ${(props) =>
       props.dark ? 'var(--dark-background)' : 'var(--light-background)'};
   }
