@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import Link from 'next/link';
+import Button from './Button';
 
 const CardContainer = styled.div`
   display: flex;
+
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -15,6 +17,7 @@ const CardContainer = styled.div`
   background-size: 200%;
   .card-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 55vh;
@@ -42,6 +45,7 @@ const Card = () => {
     <CardContainer className="">
       <div className="glass card-content box-shadow">
         <h2>Agenda tu evento con nosotros</h2>
+        <Button text="Agendar" /* bgColor="dodgerblue" color="inherit" */ />
       </div>
     </CardContainer>
   );

@@ -17,15 +17,27 @@ const TeamContainer = styled.div`
   width: 100%;
   height: 100%;
 
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .team-member {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: transparent;
+    margin: 1rem 0rem;
 
     img {
+      object-fit: cover;
       border-radius: 50%;
+    }
+    h2 {
+      margin: 1rem 0px 0px 0px;
+    }
+    h3 {
+      margin: 0;
     }
   }
 `;

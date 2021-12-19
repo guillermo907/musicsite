@@ -4,7 +4,7 @@ import Link from 'next/link';
 const SectionCont = styled.div`
   box-sizing: border-box;
   width: 100%;
-  height: ${(props) => props.height};
+  min-height: ${(props) => props.height};
   background-image: ${(props) => `url(${props.imgLink})`};
 
   background-color: ${(props) => props.bgColor};
