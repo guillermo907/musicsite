@@ -8,7 +8,8 @@ const ButtonCont = styled.button`
     props.dark ? 'var(--dark-color)' : 'var(--light-color)'};
   border-radius: 12px;
   padding: 12px 12px;
-  border: ${(props) => (props.dark ? 'none' : '1px solid')} !important;
+  border: ${(props) =>
+    props.dark ? '1px solid rgba(209, 213, 219, 0.1)' : '1px solid'} !important;
 `;
 const Button = (props) => {
   const darkTheme = useSelector(({ theme }) => theme.dark);

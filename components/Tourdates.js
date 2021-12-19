@@ -19,6 +19,10 @@ const TourdatesCont = styled.div`
   // color: ${(props) => props.color};
   padding: 20px 10px;
 
+  .tour-dates-title {
+    color: white;
+  }
+
   .banner-content {
     background-color: ${(props) => props.cardColor};
     width: 90%;
@@ -103,14 +107,11 @@ const Tourdates = (props) => {
       cardColor={props.cardColor}
       color={props.color}
       imgLink={props.img}
-      className="glass"
+      className=""
     >
-      <h1>Upcoming tour dates</h1>
+      <h1 className="tour-dates-title">Upcoming tour dates</h1>
       <br />
-      <div className="banner-content box-shadow glass">
-        {renderTourDates()}
-        ...
-      </div>
+      <div className="banner-content box-shadow glass">{renderTourDates()}</div>
     </TourdatesCont>
   );
 };
