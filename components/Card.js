@@ -45,7 +45,7 @@ const Card = () => {
     <CardContainer className="">
       <div className="glass card-content box-shadow">
         <h2>Agenda tu evento con nosotros</h2>
-        <Button text="Agendar" /* bgColor="dodgerblue" color="inherit" */ />
+        <Button text="Agendar" /* bgColor="dodgerblue"*/ />
       </div>
     </CardContainer>
   );

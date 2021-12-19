@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import Circles from './Circles';
+import Button from './Button';
 
 const TourdatesCont = styled.div`
   box-sizing: border-box;
@@ -89,7 +90,8 @@ const Tourdates = (props) => {
           <p>
             {tourdate.place} {'->'} {tourdate.date}
           </p>
-          <button>Reservar</button>
+
+          <Button text="reservar" /* bgColor="var(--color-blue-trans)"  */ />
         </div>
       );
     });
