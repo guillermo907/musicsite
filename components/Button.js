@@ -9,7 +9,9 @@ const ButtonCont = styled.button`
   border-radius: 12px;
   padding: 12px 12px;
   border: ${(props) =>
-    props.dark ? '1px solid rgba(209, 213, 219, 0.1)' : '1px solid'} !important;
+    props.dark
+      ? '1px solid rgba(209, 213, 219, 0.1)'
+      : '1px solid rgba(209, 213, 219, 0.3)'} !important;
 `;
 const Button = (props) => {
   const darkTheme = useSelector(({ theme }) => theme.dark);

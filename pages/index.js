@@ -50,8 +50,8 @@ export default function Home() {
       </Head>
       <Main>
         <div className="glass main-banner">
-          <h1>JazzTrix</h1>
-          <p>Pagina para probar NextJs</p>
+          <h1>JazzTic</h1>
+          <p>Lorem ipsum dolor sit.</p>
           <Circles />
         </div>
       </Main>
