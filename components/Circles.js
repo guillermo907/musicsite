@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import guitarPic from '../public/guitarPlayer.svg';
 import jazzPlayer from '../public/jazz2.png';
+import jazzband from '../public/jazzband.png';
 
 const CirclesContainer = styled.div`
   width: 100%;
@@ -11,8 +12,9 @@ const CirclesContainer = styled.div`
   position: absolute;
   bottom: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 30px;
 
   .circle {
     border-radius: 50%;
@@ -54,10 +56,34 @@ const CirclesContainer = styled.div`
     z-index: -1;
   }
   .jazz-image {
-    min-height: 100% !important;
-    min-width: 100% !important;
-    filter: ${(props) => (props.dark ? 'none' : 'invert(1) !important')};
+    height: 100% !important;
+    width: 100% !important;
+    /* filter: ${(props) => (props.dark ? 'none' : 'invert(1) !important')}; */
     z-index: 0;
+    margin: 0px 0px !important;
+    justify-self: flex-end;
+  }
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: 
+    max-width: 90%;
+    padding: 1rem;
+    /* color: ${(props) =>
+      props.dark ? 'var(--dark-color)' : 'var(dark-color)'}; */
+    color: rgba(255, 255, 255, 0.8);
+
+    /* position: absolute;
+    bottom: 2rem; */
+    /* right: 5rem; */
+    h1.title {
+      font-size: 4rem;
+    }
+    p {
+      max-width: fit-content;
+      padding: 0;
+      margin: 0;
+    }
   }
 `;
 
@@ -65,25 +91,26 @@ const Circles = () => {
   const darkTheme = useSelector(({ theme }) => theme.dark);
   return (
     <CirclesContainer dark={darkTheme}>
-      <Image
+      {/* <Image
         className="jazz-image"
-        src={jazzPlayer}
+        src={jazzband}
         alt="sax player"
-        /* width={500}
-        height={400} */
+        width={500}
+        height={400}
         placeholder="blur"
-      />
-      <div className="circle circle-one box-shadow">
-        {/* <Image
-          className="guitar"
-          src={guitarPic}
-          alt="Guitar player"
-          width={500}
-          height={500}
-        /> */}
+      /> */}
+      <div className="text-section">
+        <h1 className="title">Jazz tic</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          provident aspernatur placeat. Aut, voluptatem explicabo dolorum
+          exercitationem.
+        </p>
       </div>
+
+      {/* <div className="circle circle-one box-shadow"></div>
       <div className="circle circle-two box-shadow"></div>
-      <div className="circle circle-three glass box-shadow"></div>
+      <div className="circle circle-three glass box-shadow"></div> */}
     </CirclesContainer>
   );
 };

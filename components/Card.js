@@ -9,11 +9,11 @@ const CardContainer = styled.div`
   justify-content: center;
   height: 100%;
   width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to left,
     transparent,
     var(--color-blue-trans)
-  ) !important;
+  ) !important; */
   background-size: 200%;
   .card-content {
     display: flex;

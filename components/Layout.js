@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     --light-color: black;
     --dark-color: white;
     --light-background: RGBA(255, 255, 255, 0.85);
-    --dark-background: RGBA(40, 40, 40, 0.9);
+    --dark-background: RGBA(40, 40, 40, 0.85);
 }
 
   body {
@@ -22,7 +22,8 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0px;
-  background-image: url("https://as1.ftcdn.net/v2/jpg/00/99/12/20/1000_F_99122087_V0myMhFRYkp06fP0jNFHrxk0ww8weck0.jpg");
+  /* background-image: url("https://as1.ftcdn.net/v2/jpg/00/99/12/20/1000_F_99122087_V0myMhFRYkp06fP0jNFHrxk0ww8weck0.jpg"); */
+  background-image: url("https://images.unsplash.com/photo-1580832945253-9a8f87b606f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80") ;
   /* background-position: top; */
   background-size: contain; 
   color: ${(props) =>
@@ -34,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  box-sizing: boder-box;
 
   &:after{
     position: fixed;
@@ -42,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(30, 144, 255, 0.55);
+   // background-color: rgba(30, 144, 255, 0.55);
     z-index: -99;
   }
   }

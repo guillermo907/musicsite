@@ -20,23 +20,26 @@ const Main = styled.main`
   position: relative;
   width: 100%;
   height: 80vh;
+  overflow: hidden;
 
   .main-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 95%;
-    min-height: 80%;
+    width: 100%;
+    height: 100%;
     //border-radius: 12px;
-    border-radius: 50px 170px;
+   /*  border-radius: 150px 290px 320px 0px;
+    background-color: var(--dark-color);
+    opacity: 0.9; */
 }
   }
 
   h1,
   p {
-    transform: scale(1.4);
-    z-index: 1;
+    /* transform: scale(1.4);
+    z-index: 1; */
   }
 `;
 
@@ -49,9 +52,14 @@ export default function Home() {
         <meta name="theme-color" content="#2E4053" />
       </Head>
       <Main>
-        <div className="glass main-banner">
-          <h1>JazzTic</h1>
-          <p>Lorem ipsum dolor sit.</p>
+        {/* <Videobanner height="91vh">
+          <div className="glass main-banner">
+            <h1>JazzTic</h1>
+            <p>Lorem ipsum dolor sit.</p>
+            <Circles />
+          </div>
+        </Videobanner> */}
+        <div className=" main-banner">
           <Circles />
         </div>
       </Main>

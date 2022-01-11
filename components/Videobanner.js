@@ -41,7 +41,7 @@ const VideoContainer = styled.div`
 `;
 
 const Videobanner = (props) => {
-  const [play, setPlay] = useState(true);
+  const [play, setPlay] = useState(false);
 
   return (
     <VideoContainer height={props.height}>
