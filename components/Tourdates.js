@@ -90,7 +90,7 @@ const Tourdates = (props) => {
   const renderTourDates = () => {
     return tourdates.map((tourdate) => {
       return (
-        <div className="tourdate" key={tourdate.date}>
+        <div className="tourdate appear" key={tourdate.date}>
           <p>
             {tourdate.place} {'->'} {tourdate.date}
           </p>

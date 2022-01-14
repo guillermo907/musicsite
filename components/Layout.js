@@ -110,6 +110,10 @@ const GlobalStyle = createGlobalStyle`
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+.appear{
+  transition: all ease-in 1.2s;
+}
 `;
 
 const Layout = ({ children }) => {

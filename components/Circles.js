@@ -99,7 +99,7 @@ const Circles = () => {
         height={400}
         placeholder="blur"
       /> */}
-      <div className="text-section">
+      <div className="text-section appear">
         <h1 className="title">Jazz tic</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis

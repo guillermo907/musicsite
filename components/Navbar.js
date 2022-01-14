@@ -4,7 +4,7 @@ import Link from 'next/link';
 const NavbarCont = styled.nav`
   box-sizing: border-box;
   width: 100%;
-  // background-color: var(--color-four);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,7 +17,7 @@ const NavbarCont = styled.nav`
 
 const Navbar = () => {
   return (
-    <NavbarCont className="glass">
+    <NavbarCont /* className="glass" */>
       <div className="left-items">
         <Link href="/">Logo</Link>
       </div>

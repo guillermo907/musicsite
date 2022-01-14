@@ -10,7 +10,7 @@ import art from '../public/art.jpeg';
 const TeamContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
+  grid-gap: 1rem;
   align-items: center;
   justify-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@ const TeamContainer = styled.div`
     align-items: center;
     justify-content: center;
     background: transparent;
-    margin: 1rem 0rem;
+    margin: 2rem 2rem;
 
     img {
       object-fit: cover;
@@ -45,7 +45,7 @@ const TeamContainer = styled.div`
 const Team = () => {
   return (
     <TeamContainer>
-      <div className="team-member">
+      <div className="team-member appear">
         <Image
           className="jazz-image"
           src={chet}
@@ -57,7 +57,7 @@ const Team = () => {
         <h2>Chet Baker</h2>
         <h3>Trumpet</h3>
       </div>
-      <div className="team-member">
+      <div className="team-member appear">
         <Image
           className="jazz-image"
           src={kenny}
@@ -69,7 +69,7 @@ const Team = () => {
         <h2>Kenny Baron</h2>
         <h3>Piano</h3>
       </div>
-      <div className="team-member">
+      <div className="team-member appear">
         <Image
           className="jazz-image"
           src={john}
@@ -81,7 +81,7 @@ const Team = () => {
         <h2>John Patitucci</h2>
         <h3>Bass</h3>
       </div>
-      <div className="team-member">
+      <div className="team-member appear">
         <Image
           className="jazz-image"
           src={art}

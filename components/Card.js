@@ -43,8 +43,8 @@ const CardContainer = styled.div`
 const Card = () => {
   return (
     <CardContainer className="">
-      <div className="glass card-content box-shadow">
-        <h2>Agenda tu evento con nosotros</h2>
+      <div className="glass card-content box-shadow appear">
+        <h2 className="appear">Agenda tu evento con nosotros</h2>
         <Button text="Agendar" /* bgColor="dodgerblue"*/ />
       </div>
     </CardContainer>
