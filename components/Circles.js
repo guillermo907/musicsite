@@ -15,6 +15,10 @@ const CirclesContainer = styled.div`
   align-items: flex-end;
   justify-content: flex-end;
   padding: 30px;
+  background: ${(props) =>
+    props.dark
+      ? 'none'
+      : 'linear-gradient(to top, var(--light-background), transparent, transparent)'};
 
   .circle {
     border-radius: 50%;
@@ -69,9 +73,8 @@ const CirclesContainer = styled.div`
     justify-content: 
     max-width: 90%;
     padding: 1rem;
-    /* color: ${(props) =>
-      props.dark ? 'var(--dark-color)' : 'var(dark-color)'}; */
-    color: rgba(255, 255, 255, 0.8);
+    color: ${(props) => (props.dark ? 'var(--dark-color)' : 'var(dark-color)')};
+    /* color: rgba(255, 255, 255, 0.8); */
 
     /* position: absolute;
     bottom: 2rem; */

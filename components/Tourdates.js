@@ -83,6 +83,22 @@ const tourdates = [
   {
     place: 'Zapotitltic, jal',
     date: '11 de enero 2022 09:30pm'
+  },
+  {
+    place: 'Guadalaraja, jal',
+    date: '4 de enero 2022 08:45pm'
+  },
+  {
+    place: 'Tepa, jal',
+    date: '7 de enero 2022 08:00pm'
+  },
+  {
+    place: 'Zapopan, jal',
+    date: '18 de enero 2022 05:30pm'
+  },
+  {
+    place: 'Los peces, jal',
+    date: '20 de enero 2022 07:30pm'
   }
 ];
 
