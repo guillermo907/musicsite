@@ -112,7 +112,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 .appear{
-  transition: all ease-in 1.2s;
+  transition: all ease-in 1s;
 }
 `;
 

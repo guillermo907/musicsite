@@ -37,6 +37,11 @@ const VideoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(
+      to right,
+      rgba(235, 84, 215, 0.7),
+      rgba(50, 155, 170, 0.7)
+    );
   }
 `;
 

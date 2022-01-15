@@ -18,7 +18,7 @@ const CirclesContainer = styled.div`
   background: ${(props) =>
     props.dark
       ? 'none'
-      : 'linear-gradient(to top, var(--light-background), transparent, transparent)'};
+      : 'linear-gradient(to top, var(--light-background), var(--light-background),transparent, transparent,transparent)'};
 
   .circle {
     border-radius: 50%;
